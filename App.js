@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,6 +14,11 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.container}>
+          <Image
+            style={{ height: 200, width: 250 }}
+            source={require('./milwaukee-js-logo.jpeg')}
+          // source={{ uri: 'https://secure.meetupstatic.com/photos/event/3/c/1/4/600_466515380.jpeg' }}
+          />
           <Text>Lightning Talks are great!</Text>
         </View>
         <View style={[styles.container, styles.darkSide]}>
